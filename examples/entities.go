@@ -1,13 +1,14 @@
-package main
+package examples
 
 import (
-	"../."
 	"encoding/json"
 	"log"
 	"os"
+
+	"github.com/chris-skud/go-wit"
 )
 
-func main() {
+func ExampleEntities() {
 	client := wit.NewClient(os.Getenv("WIT_ACCESS_TOKEN"))
 
 	// Show a Wit builtin entity
